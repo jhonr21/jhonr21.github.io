@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<div>
+<head>
+    <meta charset="utf-8">
+    <title>Patrones Responsive Web Design - 2 Columnas</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <div class="contenedor">
+        
+            <h1>Conversor Moneda</h1>
+            <img src="img/311743.svg">
+           
+            <p class="monedas" >
+            <label>Cantidad</label>
+                <input id= "cantidad" type="text" name="cantidad" placeholder="Monto a convertir">
+                 <input id= "resultado" type="text" name="cantidad" placeholder="Resultado">
+            </p>
+              
+              
+    <div class="boton" >
+        <select class="formulario__campo" id="monedaIni">
+            <option disabled selected>-- Seleccionar Moneda --</option>
+            <option value="1">Euro</option>
+            <option value="2">Pesos Mexicano</option>
+            <option value="3">Dolares</option>
+            <option value="4">Pesos Colombiano</option>
+            <option value="5">Libras esterlinas</option>
+        </select>
+
+        <select class="formulario__campo" id="monedaConv">
+            <option disabled selected>-- Seleccionar Moneda --</option>
+            <option value="1">Euro</option>
+            <option value="2">Pesos Mexicano</option>
+            <option value="3">Dolares</option>
+            <option value="4">Pesos Colombiano</option>
+            <option value="5">Libras esterlinas</option>
+        </select>
+
+        <button onclick="validar()" type="button">Convertir!</button>
+        
+        <script src="./app.js"></script>
+    
+    </div>
+
+</div>
+
+</body>
+
+</html>
