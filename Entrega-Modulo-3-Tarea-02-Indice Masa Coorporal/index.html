@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<div>
+<head>
+    <meta charset="utf-8">
+    <title>Indice masa coorporal</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <div class="contenedor1">
+        
+            <h1>Calculadora IMC</h1>
+            
+            <div class="boton" >
+               <label>Genero <select class="genero" id="genero">
+                    <option value="0"disabled selected>-- Seleccione su genero --</option>
+                    <option value="1">Hombre</option>
+                    <option value="2">Mujer</option>
+                </select></label> 
+
+                <label> Edad <input id= "edad" type="numbre" name="edad" placeholder="Monto a convertir" required></label>
+                <label> Peso<input id= "peso" type="number" name="peso" placeholder="Resultado"required></label>
+                <label>  Altura<input id= "altura" type="number" name="altura" placeholder="Resultado"required></label>
+              
+              
+        <button onclick="validar()" type="button">Convertir!</button>
+        
+        <script src="./app.js"></script>
+    
+    </div>
+
+</div>
+
+<footer class="footer">
+    <p class="footer__texto">Front End Store - Todos los derechos Reservados 2022.</p>
+</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontEnd Store</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <header class="header">
+
+        <nav class="navegacion">
+            <a href="index.html"><img src="img/player-modal-header-2.svg" alt="icono"></a>
+            <a class="navegacion__enlace navegacion__enlace--activo" href="index.html">Peliculas</a>
+            <a class="navegacion__enlace" href="registro.html">Registro</a>
+            <a class="navegacion__enlace" href="Ecommerce.html">Carrito</a>
+            <a href=""></a>
+        </nav>
+    </header>
+
+    <main class="contenedor">
+
+
+        <div class="pelicula">
+            <img class="Pelicula__imagen" id="imagen" src="img/deadpool.jpg" alt="Banner">
+
+            <div class="pelucula__contenido">
+                <h1 id="titulopelicula"></h1>
+                <p id="descripcion"></p>
+                <h2 id="precio"> precio $</h2>
+
+                <form class="formulario2">
+                    <select id="formato" class="formulario__campo">
+                        <option value="0" disabled selected>-- Seleccione Formato --</option>
+                        <option value="dvd">DVD</option>
+                        <option value="bluray">BLU RAY</option>
+                        <option value="hd">FULL HD</option>
+                    </select>
+
+                    <input class="formulario__submit" id="Pprueba" type="submit" onclick="compra()"
+                        value="Agregar al Carrito">
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p class="footer__texto">Front End Store - Todos los derechos Reservados 2022.</p>
+    </footer>
+
+    <script src="./scritp/script.js"></script>
+    <script src="./scritp/producto.js"></script>
+    <script src="./scritp/carrito.js"></script>
+</body>
+
+</html>

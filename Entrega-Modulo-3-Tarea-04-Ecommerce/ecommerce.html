@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    
+
+    <header class="header">
+       
+      <nav class="navegacion">
+        <a href="index.html"><img src="img/player-modal-header-2.svg" alt="icono"></a>
+        <a class="navegacion__enlace navegacion__enlace--activo" href="index.html">Peliculas</a>
+        <a class="navegacion__enlace" href="registro.html">Registro</a>
+        <a class="navegacion__enlace" href="Ecommerce.html">Carrito</a>
+        <a href=""></a>
+    </nav>
+    <main class="contenedor">
+      <h1>Compras</h1>
+    </header>
+    <div class="tab-pane carrito"
+    id="pills-contact"
+        role="tabpanel"
+        aria-labelledby="pills-contact-tab"
+      >
+      <br>
+    
+        <table class="table table-dark table-hover">
+            <thead>
+              <tr class="text-primary">
+                <th scope="col">#</th>
+                <th scope="col">Producto</th>
+                <th scope="col">Precio</th>
+                <th scope="col">Cancelar</th>
+                
+              </tr>
+            </thead>
+
+
+            <tbody id="productosguardados">
+              <!-- <tr>
+                <th class="texto-1" scope="row">1</th>
+                <td class="table__productos">
+                <img id="imagencarrito"src="/img/civil war.jpg" alt=""><br><br>
+                <h4 id="descripcion" class=""></h4>
+                </td>
+                <td id="precio" class="table__price"><p id="preciocarrito"></p></td>
+                <td class="table__cantidad">
+                  <input id="cajita" type="number" min="1" value="1">
+                  <button class="delete btn btn-danger" >x </button>
+                </td>
+              </tr> -->
+              
+            </tbody>
+
+
+
+          </table>
+          <br><br>
+          <div class="row max-4"></div>
+          <div class="col">
+
+            <h2 class="itemscartotal text-white " id="totalFinal" ></h2>
+            <div class="col d-flex justify content-end">
+              
+              <button class="btn btn-success" onclick="comprar()">Comprar</button>
+            </div>
+          </div>
+        </div>
+
+        
+        
+        
+
+       
+   
+
+    <footer class="footer">
+        <p class="footer__texto">Front End Store - Todos los derechos Reservados 2022.</p>
+    </footer>
+    
+    <script src="./scritp/script.js"></script>
+    <script src="./scritp/carrito.js"></script>
+    
+</body>
+</html>

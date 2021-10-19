@@ -73,3 +73,9 @@ array.push(objeto);
 
 //7. Almacenar en el local storage
     localStorage.setItem('array',JSON.stringify(array));}
+
+    //funcion del carrito
+    function compra(params) {
+      window.open(carrito.html)
+    }
+    
